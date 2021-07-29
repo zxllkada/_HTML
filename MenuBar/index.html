@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+</head>
+
+   <style>
+
+      body {
+
+         margin: 0;
+
+         background: #F8F8FD;
+
+         font-family: "Poppins", sans-serif;
+
+         font-weight: 800;
+
+         text-align: center;
+
+      }
+
+      
+
+      /* Draw Menu */
+
+      .menu {
+
+         width: 100%;
+
+         height: 50px;
+
+         background: #262627E6;
+
+         position: relative;
+
+      }
+
+      .menu .spin {
+
+         width: 30px;
+
+         height: 25px;
+
+         padding: 12.5px;
+
+      }
+
+      .menu .spin div {
+
+         display: grid;
+
+         grid-template-columns: 100%;
+
+         width: 100%;
+
+         height: 5px;
+
+         background: #F8F8FD;
+
+         margin-bottom: 5px;
+
+      }
+
+     
+
+      /* Hover On The Menu */
+
+      .menu .spin:hover {
+
+         animation: menuSpin 1s linear reverse;
+
+         transition: all 0.3s ease-in-out 0s;
+
+      }
+
+      .menu .spin:hover + .menuOptions {
+
+         margin-left: 0;
+
+         transition: all 0.4s ease-in-out 0s;
+
+      }
+
+      @keyframes menuSpin {
+
+         0% {
+
+            opacity: 0;
+
+         }
+
+         100% {
+
+            transform: rotate(180deg);
+
+         }
+
+      }
+
+      
+
+      /* Menu Options */
+
+      .menuOptions {
+
+         width: 100%;
+
+         background: #5846f9;
+
+         display: grid;
+
+         grid-template-columns: 100%;
+
+         margin-left: -100%;
+
+         z-index: 000;
+
+         transition: all 1s ease-in-out 1s;
+
+         position: absolute;
+
+      }
+
+      .menuOptions a {
+
+         text-decoration: none;
+
+         color: #FFF;
+
+         padding: 7px;
+
+      }
+
+      .menuOptions a:hover {
+
+         color: #5846f9;
+
+         background: #FFF;
+
+         
+
+      }
+
+   </style>
+
+<body>
+
+   <div class="menu">
+
+      <div class="spin">
+
+         <div></div>
+
+         <div></div>
+
+         <div></div>
+
+      </div>
+
+      <div class="menuOptions">
+
+         <a href="#">Home</a>
+
+         <a href="#">About</a>
+
+      </div>
+
+   </div>
+
+   <section>
+
+      <i>Hello Users</i>
+
+   </section>
+
+</body>
+
+</html>
